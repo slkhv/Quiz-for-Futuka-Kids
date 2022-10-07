@@ -41,13 +41,13 @@ class Quiz {
 
       for (let i=0;i<this.list.length;i++) {
         
-        if (typeof this.list[i].content != 'string') {
+        // if (typeof this.list[i].content != 'string') {
           
           let that = this;
-          document.querySelector(`#Quiz_${Number(this.level)-(-1)}_${i}`).addEventListener('click', function () {
+          document.querySelector(`#Quiz_${Number(this.level)+1}_${i}`).addEventListener('click', function () {
             that.chooseItem(this, i); // this = element
           });
-        }
+        // }
       }
 
     } else {
@@ -90,16 +90,14 @@ class Quiz {
       this.container.innerHTML = html;
 
       for (let i=0;i<list.content.length;i++) {
-
-        console.log(i, typeof this.list[i].content);
         
-        if (typeof this.list[i].content != 'string') {
-          
           let that = this;
-          document.querySelector(`#Quiz_${(Number(this.level)+1)}_${i}`).addEventListener('click', function () {
-            that.chooseItem(this, i); // this = element
-          });
-        }
+
+          if (document.querySelector(`#Quiz_${(Number(this.level)+1)}_${i}`) != null) {
+            document.querySelector(`#Quiz_${(Number(this.level)+1)}_${i}`).addEventListener('click', function () {
+              that.chooseItem(this, i); // this = element
+            });
+          }
       }
     }
   }
@@ -114,7 +112,7 @@ class Quiz {
 
   back () {
 
-    this.level--;
+    this.level>1 ? this.level-- : this.level = 0;
 
     this.renderList();
   }

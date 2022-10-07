@@ -30,6 +30,7 @@
   border: 1px solid #E5E5E5;
   margin: 0 24px 24px 0;
   background: #fff;
+  cursor: pointer;
 }
 .quiz__content .quiz__item--title {
   font-size: 24px;
