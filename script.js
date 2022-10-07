@@ -3,13 +3,14 @@ class Quiz {
   constructor(list, template) {
 
     this.container = document.querySelector('.quiz__content');
+    this.controls = document.querySelector('.quiz__controls');
     this.backBtn = document.querySelector('.quiz__controls--back');
 
     this.list = list;
     this.template = template;
     
     this.level = 0;
-    this.current = [];
+    this.currentID = [];
 
 
     let that = this;
@@ -21,6 +22,8 @@ class Quiz {
   renderList () {
 
     if (this.level==0) { // First level
+
+      this.hideControls();
 
       let html = "";
 
@@ -52,18 +55,21 @@ class Quiz {
 
     } else {
 
+      this.showControls();
+
+
       let list;
 
       if (this.level==1) {
-        list = this.list[this.current[0]];
+        list = this.list[this.currentID[0]];
       } else if (this.level==2) {
-        list = this.list[this.current[0]].content[this.current[1]];
+        list = this.list[this.currentID[0]].content[this.currentID[1]];
       } else if (this.level==3) {
-        list = this.list[this.current[0]].content[this.current[1]].content[this.current[2]];
+        list = this.list[this.currentID[0]].content[this.currentID[1]].content[this.currentID[2]];
       } else if (this.level==4) {
-        list = this.list[this.current[0]].content[this.current[1]].content[this.current[2]].content[this.current[3]];
+        list = this.list[this.currentID[0]].content[this.currentID[1]].content[this.currentID[2]].content[this.currentID[3]];
       } else if (this.level==5) {
-        list = this.list[this.current[0]].content[this.current[1]].content[this.current[2]].content[this.current[3]].content[this.current[4]];
+        list = this.list[this.currentID[0]].content[this.currentID[1]].content[this.currentID[2]].content[this.currentID[3]].content[this.currentID[4]];
       }
 
 
@@ -104,7 +110,7 @@ class Quiz {
   
   chooseItem (e, id) {
 
-    this.current[this.level] = Number(id);
+    this.currentID[this.level] = Number(id);
     this.level = e.getAttribute('data-level');
 
      this.renderList();
@@ -115,6 +121,14 @@ class Quiz {
     this.level>1 ? this.level-- : this.level = 0;
 
     this.renderList();
+  }
+
+  hideControls () {
+    this.controls.classList.add('-hidden');
+  }
+
+  showControls () {
+    this.controls.classList.remove('-hidden');
   }
 }
 

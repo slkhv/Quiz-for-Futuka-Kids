@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="quiz__controls">
+      <div class="quiz__controls -hidden">
         <button class="quiz__controls--back">Назад</button>
       </div>
     </div>

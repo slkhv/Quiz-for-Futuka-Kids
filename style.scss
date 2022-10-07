@@ -65,6 +65,10 @@
     justify-content: center;
     margin-top: 48px;
 
+    &.-hidden {
+      display: none;
+    }
+
     &--back {
       display: inline-block;
       padding: 12px 24px;
