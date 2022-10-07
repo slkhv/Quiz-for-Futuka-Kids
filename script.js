@@ -143,62 +143,58 @@ let quiz = new Quiz(
       comment: "",
       content: [
         {
-          title: "Осertтавить жалобу",
+          title: "Оставить жалобу 1",
           comment: "Пожалуйста, оставьте свою жалобу",
-          content: `<p>Спасибо за вашу жалобу</p>`
+          content: `
+            <script data-b24-form="inline/8/k9vyjr" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://b24.futuka.ru/upload/crm/form/loader_8_k9vyjr.js');</script>
+          `
         },
         {
-          title: "Оставить edty",
+          title: "Оставить жалобу 2",
           comment: "Пожалуйста, оставьте свою жалобу",
           content: [
             {
-              title: "Осertтавить жалобу",
+              title: "Оставить жалобу 2_1",
               comment: "Пожалуйста, оставьте свою жалобу",
-              content: `<p>Спасибо за вашу жалобу</p>`
+              content: `
+                <script data-b24-form="inline/8/k9vyjr" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://b24.futuka.ru/upload/crm/form/loader_8_k9vyjr.js');</script>
+              `
             },
             {
-              title: "Оставить edty",
+              title: "Оставить жалобу 2_2",
               comment: "Пожалуйста, оставьте свою жалобу",
-              content: [{}]
+              content: `
+                <script data-b24-form="inline/8/k9vyjr" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://b24.futuka.ru/upload/crm/form/loader_8_k9vyjr.js');</script>
+              `
             },
             {
-              title: "Оставить f",
+              title: "Оставить жалобу 2_3",
               comment: "Пожалуйста, оставьте свою жалобу",
-              content: [{}]
+              content: `
+                <script data-b24-form="inline/8/k9vyjr" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://b24.futuka.ru/upload/crm/form/loader_8_k9vyjr.js');</script>
+              `
             }
           ]
         },
         {
-          title: "Оставить f",
+          title: "Оставить жалобу 3",
           comment: "Пожалуйста, оставьте свою жалобу",
-          content: `<p>Спасибо за вашу жалобу 3</p>`
+          content: `
+            <script data-b24-form="inline/8/k9vyjr" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://b24.futuka.ru/upload/crm/form/loader_8_k9vyjr.js');</script>
+          `
         }
       ]
     }, {
       title: "Поблагодарить",
       comment: "",
       content: `
-        <form>
-          <input type="text" placeholder="Имя">
-          <input type="text" placeholder="Фамилия">
-          <input type="text" placeholder="Телефон">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Адрес проживания">
-          <input type="text" placeholder="Сообщение">
-          <button type="submit">Отправить</button>
-        </form>
+        <script data-b24-form="inline/8/k9vyjr" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://b24.futuka.ru/upload/crm/form/loader_8_k9vyjr.js');</script>
       `,
     }, {
       title: "Внести предложение",
       comment: "",
       content: ` 
-        <form>
-          <input type="text" placeholder="Ваше имя">
-          <input type="text" placeholder="Ваша фамилия">
-          <input type="text" placeholder="Ваше отчество">
-          <input type="text" placeholder="Ваше предложение">
-          <input type="submit" value="Отправить">
-        </form>
+        <script data-b24-form="inline/8/k9vyjr" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://b24.futuka.ru/upload/crm/form/loader_8_k9vyjr.js');</script>
       `,
     }
   ],
